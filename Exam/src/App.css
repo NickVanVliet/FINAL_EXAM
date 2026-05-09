@@ -16,7 +16,7 @@
     outline-offset: 2px;
   }
 }
-.app { /*styling for the darkmode app and backrounding*/
+.light-mode { /*styling for the darkmode app and backrounding*/
   min-height: 100vh;
   padding: 20px;
   background-color: white;
@@ -24,15 +24,21 @@
   transition: 0.8s;
 }
 
-.app.dark {
+.dark-mode {
   background-color: #121212; /*darkmode backrounding*/
   color: white;
 }
 
-button {
-  padding: 10px 15px;
-  margin-top: 10px;
-  cursor: pointer; /* darkmode toggle button styling */
+.button-Darkmode {
+  width:100%;
+  text-align: right; /* darkmode toggle button styling */
+}
+button{
+  padding: 8px 13px;
+  margin: 5px;
+}
+h1 {
+  color:inherit;
 }
 .hero {
   position: relative;
