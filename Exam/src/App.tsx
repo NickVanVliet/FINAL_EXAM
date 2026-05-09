@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 
+import CatAdoptList from './CatAdoptList.tsx'
+
 function App() {
   const [darkMode, setDarkMode] = useState(false)
 
@@ -35,14 +37,7 @@ function App() {
       </div>
 
       <h1> Cat Adoption List</h1> 
-      <input type = "text" value={newCat} onChange={(e) => setNewCat(e.target.value)} placeholder="Enter cat name" />
-      <button onClick={addCat}>Add Cat</button>
-
-      <ul> 
-        {cats.map( (cat: string, index: number) => (
-          <li key={index}>{cat}</li>
-        ))}
-      </ul>
+      <CatAdoptList cats={cats} newCat={newCat} setNewCat={setNewCat} addCat={addCat} />
     </div>
   )
 }

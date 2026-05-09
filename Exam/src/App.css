@@ -21,10 +21,12 @@
   padding: 20px;
   background-color: white;
   color: black;
-  transition: 0.8s;
+  transition: 0.3s;
 }
 
 .dark-mode {
+  min-height: 100vh;
+  padding: 20px;
   background-color: #121212; /*darkmode backrounding*/
   color: white;
 }
